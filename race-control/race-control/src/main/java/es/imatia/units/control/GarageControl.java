@@ -19,13 +19,27 @@ public class GarageControl {
         } else {
             boolean b = garages.stream().anyMatch(garage -> garage.getGarageName().equals(gName));
 
-            if (b==true) {
+            if (b) {
                 log.warning("Xa existe un garaxe co nome " + gName);
             } else {
                 garages.add(new Garage(gName));
             }
         }
 
+    }
+
+    public static void deleteGarage(Scanner sc, List<Garage> garages) {
+        System.out.println("Nome do garaxe que desexa eliminar:\n");
+        String gName = sc.nextLine();
+        Garage deleteGarage = garages.stream()
+                .filter(garage -> garage.getGarageName()
+                        .equals(gName)).findFirst().orElse(null);
+        garages.remove(deleteGarage);
+        log.info("Eliminado con éxito");
+    }
+
+    public static void showGarages(List<Garage> garages) {
+        garages.forEach(g -> System.out.println(g.getGarageName()));
     }
 
 }

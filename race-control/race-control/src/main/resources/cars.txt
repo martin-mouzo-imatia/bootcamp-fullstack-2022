@@ -1,0 +1,20 @@
+1,Dodge,Neon,Ford
+2,Mercury,Grand Marquis,Ferrari
+3,GMC,Safari,Ferrari
+4,Ford,Econoline E150,Ferrari
+5,Mercury,Tracer,Ford
+6,Lotus,Elise,Mercedes
+7,Porsche,Boxster,Ford
+8,Honda,Odyssey,BMW
+9,Chevrolet,SSR,BMW
+10,Toyota,MR2,BMW
+11,Mitsubishi,Pajero,Mercedes
+12,Chevrolet,Camaro,Renault
+13,Bentley,Continental GTC,Ferrari
+14,Chevrolet,Silverado 1500,Ferrari
+15,Buick,LeSabre,Renault
+16,Ford,Crown Victoria,Mercedes
+17,Acura,ZDX,Renault
+18,Pontiac,Grand Prix,Mercedes
+19,Infiniti,QX,Renault
+20,Chevrolet,Express,Mercedes

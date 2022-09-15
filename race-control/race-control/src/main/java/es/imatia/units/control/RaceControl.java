@@ -65,5 +65,30 @@ public class RaceControl {
         });
     }
 
+    private static void requestRaceData(Scanner sc, List<Race> races) {
+
+        if (races.isEmpty()) {
+            log.warning("Debes crear unha carreira antes de comezar");
+        } else {
+            log.info("--------Comezando carreira------------");
+            races.forEach(r -> System.out.println(r.getRName()));
+            System.out.println("Escribe o nome da carreira que desexa disputar:\n");
+            String rName = sc.nextLine();
+
+            Race race = races.stream().filter(r -> r.getRName().equals(rName)).findAny().orElse(null);
+            if (race == null) {
+                log.warning("Non existe unha carreira co nome " + rName);
+            } else {
+                races.add(race);
+                simulateRace(race);
+            }
+        }
+    }
+
+    private static void simulateRace(Race race) {
+
+
+    }
+
 
 }

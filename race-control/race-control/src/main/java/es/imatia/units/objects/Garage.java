@@ -15,4 +15,9 @@ public class Garage implements Serializable {
     public Garage(String garageName) {
         this.garageName = garageName;
     }
+
+    @Override
+    public String toString() {
+        return garageName;
+    }
 }

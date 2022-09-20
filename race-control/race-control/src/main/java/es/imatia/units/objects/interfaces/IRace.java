@@ -6,10 +6,10 @@ import java.util.List;
 
 public interface IRace {
 
-  public  String getRaceName();
+    String getRaceName();
 
-  public  List<Car> getParticipatingCars();
+    List<Car> getParticipatingCars();
 
-  public  void addCar(Car car);
+    void addCar(Car car);
 
 }

@@ -21,11 +21,11 @@ public class RaceCar implements Serializable {
         this.setCar(car);
     }
 
-    public void resetDistance(){
+    public void resetDistance() {
         this.carDistance = 0;
     }
 
-    public void addCarPoints(int points){
+    public void addCarPoints(int points) {
         this.carPoints += points;
     }
 

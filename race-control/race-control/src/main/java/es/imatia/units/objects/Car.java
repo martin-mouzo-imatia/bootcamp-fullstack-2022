@@ -43,9 +43,10 @@ public class Car implements Serializable {
     public void randomSpeed() {
         Random random = new Random();
         speed += random.nextBoolean() ? 10 : -10;
-        speed = Math.max(speed, 0);
-        speed = Math.max(speed, MAX_SPEED);
+        speed = speed < 0 ? 0 : speed;
+        speed = speed > MAX_SPEED ? MAX_SPEED : speed;
 
+//Para encontrar a distancia cando se dan a velocidade e o tempo
         distance += speed / 60f;
     }
 

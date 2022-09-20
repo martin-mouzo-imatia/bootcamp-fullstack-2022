@@ -19,9 +19,14 @@ public class Garage implements Serializable {
 
     private List<Car> carList;
 
-    public Garage(String garageName) {
+    public Garage(int id, String garageName) {
+        this.id = id;
         this.garageName = garageName;
         this.setCarList(new ArrayList<>());
+    }
+
+    public void addCar(Car c) {
+        carList.add(c);
     }
 
     @Override

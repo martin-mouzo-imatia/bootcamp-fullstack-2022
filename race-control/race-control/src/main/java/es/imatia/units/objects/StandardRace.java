@@ -9,8 +9,8 @@ import java.util.stream.IntStream;
 @Data
 public class StandardRace extends Race {
 
-
     private static final int STANDARD_DURATION = 3;
+
     @Serial
     private static final long serialVersionUID = -4741161257655362511L;
 
